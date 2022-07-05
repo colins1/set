@@ -1,4 +1,4 @@
-import Undead from '../undead';
+import Undead from '../js/Undead';
 test('should return the created Undead', () => {
   expect(new Undead('John')).toEqual({
     name: 'John',

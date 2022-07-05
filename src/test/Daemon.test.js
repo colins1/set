@@ -1,4 +1,4 @@
-import Daemon from '../daemon';
+import Daemon from '../js/Daemon';
 test('should return the created Daemon', () => {
   expect(new Daemon('John')).toEqual({
     name: 'John',

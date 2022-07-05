@@ -1,4 +1,4 @@
-import Swordsman from '../swordsman';
+import Swordsman from '../js/Swordsman';
 test('should return the created Swordsman', () => {
   expect(new Swordsman('John')).toEqual({
     name: 'John',

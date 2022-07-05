@@ -1,5 +1,5 @@
-import Team from '../Team';
-import Character from '../character';
+import Team from '../js/Team';
+import Character from '../js/Character';
 
 test('should return add character', () => {
   const character = new Character('John');

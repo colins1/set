@@ -1,4 +1,4 @@
-import Zombie from '../zombie';
+import Zombie from '../js/Zombie';
 
 test('should return the created Zombie', () => {
   expect(new Zombie('John')).toEqual({

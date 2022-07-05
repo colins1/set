@@ -1,4 +1,4 @@
-import Character from '../character';
+import Character from '../js/Character';
 test.each([0, 1, -1])(
   'should return an error on a number instead of a name',
   (num) => {

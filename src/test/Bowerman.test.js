@@ -1,5 +1,4 @@
-import Bowerman from '../bowerman';
-
+import Bowerman from '../js/Bowerman';
 test('should return the created Bowerman', () => {
   expect(new Bowerman('John')).toEqual({
     name: 'John',
