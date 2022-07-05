@@ -1,7 +1,7 @@
 import Team from '../js/Team';
 import Character from '../js/Character';
 
-test('should return add character', () => {
+test('add character', () => {
   const character = new Character('John');
   const team = new Team();
   team.add(character);
@@ -12,7 +12,7 @@ test('should return add character', () => {
   expect(team.members).toEqual(expected);
 });
 
-test('should return an error when re-adding a character', () => {
+test('Repit add character', () => {
   const character = new Character('John');
   const team = new Team();
   team.add(character);
@@ -20,10 +20,10 @@ test('should return an error when re-adding a character', () => {
   expect(() => team.add(character)).toThrowError(new Error('Персонаж уже добавлен в команду'));
 });
 
-test('should add an arbitrary number of characters', () => {
+test('arbitrary addition', () => {
   const characterOne = new Character('John');
-  const characterTwo = new Character('Ivan');
-  const characterThree = new Character('Kate');
+  const characterTwo = new Character('Max');
+  const characterThree = new Character('Jenya');
 
   const team = new Team();
   team.addAll(characterOne, characterTwo, characterThree);
@@ -36,18 +36,18 @@ test('should add an arbitrary number of characters', () => {
   expect(team.members).toEqual(expected);
 });
 
-test('should return array', () => {
+test('array return', () => {
   const characterOne = new Character('John');
-  const characterTwo = new Character('Ivan');
-  const characterThree = new Character('Kate');
+  const characterTwo = new Character('Max');
+  const characterThree = new Character('Jenya');
 
   const team = new Team();
   team.addAll(characterOne, characterTwo, characterThree);
 
   const expected = [
     { health: 100, level: 1, name: 'John' },
-    { health: 100, level: 1, name: 'Ivan' },
-    { health: 100, level: 1, name: 'Kate' },
+    { health: 100, level: 1, name: 'Max' },
+    { health: 100, level: 1, name: 'Jenya' },
   ];
 
   expect(team.toArray()).toEqual(expected);

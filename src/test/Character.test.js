@@ -7,7 +7,7 @@ test.each([0, 1, -1])(
   },
 );
 
-test.each(['', 'A', 'aaaaaaaaaaa'])(
+test.each(['', 'A', 'aaaaaaaaaaaaaaaaaaaaaaa'])(
   'should return an error for a name less than 2 or more than 10 characters',
   (str) => {
     const textErr = 'Имя должно содержать от 2 до 10 символов';
